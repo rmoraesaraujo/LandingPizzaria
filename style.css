@@ -118,7 +118,7 @@ header {
   }
 }
 
-& .heading {
+.heading {
   text-align: center;
   color: #fff;
   text-transform: uppercase;
@@ -264,9 +264,9 @@ header {
   }
 }
 
-/* PRODUTOS E PROMOÇÕES */
+/* PRODUTOS E PROMOÇÕES & REVIEW */
 
-& .box-container {
+.box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
@@ -291,13 +291,28 @@ header {
     }
 
     & img {
-      padding: 2.5rem 0;
+      padding: 1rem 0;
       height: 25rem;
+
+      /* image user review */
+      &.user {
+        height: 12rem;
+        width: 10rem;
+        border-radius: 50%;
+        /* object-fit: cover; */
+      }
     }
 
     & h3 {
       font-size: 2rem;
       padding: 1rem 0;
+      color: #fff;
+    }
+
+    /* Review */
+    & p {
+      font-size: 1.56rem;
+      line-height: 1.8;
       color: #fff;
     }
 
