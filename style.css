@@ -250,7 +250,7 @@ header {
       }
     }
 
-    &:hover{
+    &:hover {
       background-color: #fff;
 
       & h3 {
@@ -260,7 +260,63 @@ header {
       & .price {
         color: #000;
       }
+    }
+  }
+}
 
+/* PRODUTOS E PROMOÇÕES */
+
+& .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+
+  & .box {
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+
+    & a ion-icon {
+      height: 3rem;
+      width: 3rem;
+      line-height: 3rem;
+      font-size: 1.7rem;
+      border: var(--border);
+      color: #fff;
+      margin: 0.3rem;
+
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+
+    & img {
+      padding: 2.5rem 0;
+      height: 25rem;
+    }
+
+    & h3 {
+      font-size: 2rem;
+      padding: 1rem 0;
+      color: #fff;
+    }
+
+    & .icon-stars ion-icon {
+      padding: 0.2rem;
+      font-size: 2rem;
+      color: var(--main-color);
+    }
+
+    & .price {
+      font-size: 2.5rem;
+      padding: 0.5rem 0;
+      color: #fff;
+
+      & span {
+        font-size: 1.5rem;
+        font-weight: lighter;
+        text-transform: lowercase;
+      }
     }
   }
 }
