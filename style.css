@@ -130,3 +130,47 @@ header {
     letter-spacing: 0.2rem;
   }
 }
+
+/* HOME */
+
+.home {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background: url(./images/home.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: var(--border);
+
+  & .content {
+    max-width: 60rem;
+    position: relative;
+    z-index: 2;
+
+    & h3 {
+      font-size: 6rem;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    & p {
+      font-size: 2rem;
+      font-weight: lighter;
+      line-height: 1.8;
+      padding: 1rem 0;
+      color: #fff;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+}
