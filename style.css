@@ -104,19 +104,6 @@ header {
   }
 }
 
-.heading {
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  padding-bottom: 3.5rem;
-  font-size: 4rem;
-
-  &.heading span {
-    color: var(--main-color);
-    text-transform: uppercase;
-  }
-}
-
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -172,5 +159,55 @@ header {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
+  }
+}
+
+/* SOBRE / ABOUT */
+
+.about {
+  & .heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+
+    &.heading span {
+      color: var(--main-color);
+      text-transform: uppercase;
+    }
+  }
+
+  & .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--bg-card);
+    border: var(--border);
+
+    & .image {
+      flex: 1 1 45rem;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  & .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+
+    & h3 {
+      font-size: 3rem;
+      color: #fff;
+    }
+
+    & p {
+      font-size: 1.6rem;
+      color: #ccc;
+      padding: 1rem 0;
+      line-height: 1.8;
+    }
   }
 }

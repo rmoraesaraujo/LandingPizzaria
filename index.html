@@ -12,25 +12,25 @@
       <a href="#"><img src="/images/logo.jpg" alt="Logo da pizzaria" /></a>
 
       <nav>
-        <a href="#home"></a>
-        <a href="#about"></a>
-        <a href="#menu"></a>
-        <a href="products"></a>
-        <a href="#review"></a>
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
       </nav>
 
-      <div>
+      <div class="header-icons">
         <div><ion-icon name="person"></ion-icon></div>
         <div><ion-icon name="search"></ion-icon></div>
         <div><ion-icon name="cart"></ion-icon></div>
-        <div><ion-icon name="menu"></ion-icon></div>
+        <div id="menu-btn"><ion-icon name="menu"></ion-icon></div>
       </div>
     </header>
 
     <!-- HOME -->
 
-    <section id="home">
-      <div>
+    <section class="home" id="home">
+      <div class="content">
         <h3>Bem vindo á Pizzaria!</h3>
         <p>
           Descubra o sabor autêntico das nossas pizzas, preparadas com
@@ -42,31 +42,33 @@
 
     <!-- SOBRE -->
 
-    <section id="about">
+    <section class="about" id="about">
       <h1 class="heading"><span>Sobre</span> nós</h1>
 
-      <div>
-        <img src="images/sobre.jpg" alt="Foto de uma pizzaria de esquina" />
-      </div>
+      <div class="row">
+        <div class="image">
+          <img src="images/sobre.jpg" alt="Foto de uma pizzaria de esquina" />
+        </div>
 
-      <div>
-        <h3>O que torna a nossa Pizzaria única?</h3>
+        <div class="content">
+          <h3>O que torna a nossa Pizzaria única?</h3>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum
-          ipsa quod quaerat deleniti in consectetur nostrum excepturi quis
-          suscipit! Temporibus vero dignissimos maiores cumque placeat quis sed
-          eveniet fugiat.
-        </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi earum
+            ipsa quod quaerat deleniti in consectetur nostrum excepturi quis
+            suscipit! Temporibus vero dignissimos maiores cumque placeat quis
+            sed eveniet fugiat.
+          </p>
 
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde esse
-          placeat vel ipsam veritatis, sequi saepe laboriosam sit voluptatem
-          similique. Nobis modi dignissimos distinctio voluptas culpa
-          perferendis, vero ipsa amet.
-        </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde esse
+            placeat vel ipsam veritatis, sequi saepe laboriosam sit voluptatem
+            similique. Nobis modi dignissimos distinctio voluptas culpa
+            perferendis, vero ipsa amet.
+          </p>
 
-        <a href="#" class="btn">Saiba mais</a>
+          <a href="#" class="btn">Saiba mais</a>
+        </div>
       </div>
     </section>
 
@@ -122,7 +124,7 @@
 
     <!-- PRODUTOS / PROMOÇÕES -->
 
-    <section class="products">
+    <section id="products">
       <h2 class="heading"><span>Combos e</span> promoções</h2>
 
       <div class="box-container">
@@ -214,7 +216,7 @@
 
     <!-- O QUE DIZEM -->
 
-    <section class="review">
+    <section id="review">
       <h2 class="heading"><span>O que nossos </span>clientes dizem</h2>
 
       <div class="box-container">
