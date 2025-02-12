@@ -118,6 +118,19 @@ header {
   }
 }
 
+& .heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+
+  &.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+}
+
 /* HOME */
 
 .home {
@@ -165,19 +178,6 @@ header {
 /* SOBRE / ABOUT */
 
 .about {
-  & .heading {
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    padding-bottom: 3.5rem;
-    font-size: 4rem;
-
-    &.heading span {
-      color: var(--main-color);
-      text-transform: uppercase;
-    }
-  }
-
   & .row {
     display: flex;
     flex-wrap: wrap;
@@ -208,6 +208,59 @@ header {
       color: #ccc;
       padding: 1rem 0;
       line-height: 1.8;
+    }
+  }
+}
+
+/* MENU */
+
+.menu {
+  & .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  & .box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+    background: var(--bg-card);
+
+    & img {
+      height: 18rem;
+      border-radius: 100%;
+    }
+
+    & h3 {
+      font-size: 2rem;
+      padding: 1rem 0;
+      color: #fff;
+    }
+
+    & .price {
+      font-size: 2.5rem;
+      padding: 0.5rem 0;
+      color: #fff;
+
+      & span {
+        font-size: 1.5rem;
+        text-decoration: line-through;
+        font-weight: lighter;
+      }
+    }
+
+    &:hover{
+      background-color: #fff;
+
+      & h3 {
+        color: #000;
+      }
+
+      & .price {
+        color: #000;
+      }
+
     }
   }
 }
