@@ -334,4 +334,82 @@ header {
       }
     }
   }
+
+  /* Footer / Rodapé */
+}
+
+.footer {
+  background-color: var(--bg);
+  text-align: center;
+  padding: 4rem 0;
+
+  & .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 7%;
+  }
+
+  & .footer-col {
+    flex: 1 1 25rem;
+
+    & ul {
+      list-style: none;
+      padding: 0;
+
+      & li {
+        margin-bottom: 1rem;
+        & a {
+          color: #ccc;
+          text-decoration: none;
+          font-size: 1.6em;
+          transition: color 0.3s;
+
+          &:hover {
+            color: var(--main-color);
+          }
+        }
+      }
+    }
+
+    & .social-links a {
+      color: #ccc;
+      font-size: 3rem;
+      transition: color 0.3s;
+
+      &:hover {
+        color: var(--main-color);
+      }
+
+      & .social-links i {
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  & .heading-footer {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+
+    & span {
+      color: var(--main-color);
+      text-transform: uppercase;
+    }
+  }
+  .footer-bottom {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.6rem;
+    border-top: var(--border);
+    margin-top: 2rem;
+    color: #ccc;
+  }
 }
